@@ -35,7 +35,7 @@ def make_tags(tag):
 class Wallabag:
     def __init__(self, config):
         self.config = config
-        self.tag = "kindle"
+        self.tag = config.tag
         self.tags = make_tags(self.tag)
 
     async def get_token(self, user, passwd):
